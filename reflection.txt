@@ -1,0 +1,23 @@
+Ok that was kinda fun. Aggrivating but fun. 
+How did recursive insertion work?
+    Insertion within a tree starts by asking what the parent node is to establish who the child node belongs to. Then, it asks for the child node name, and inserts it either left or right of the parent node. 
+What challenges did you face when finding the right spot for a new employee?
+    I struggled getting the tree structure to print. I followed exactly what the resources showed, but at the spot where it says:
+        indent = "  " * level
+        print(f"{indent}-{node.name}")
+    the {indent} within the print was missing and that turned out to be the issue. So technically, the resource code wouldn't nest the printed results. Other than that, the bugs were just because I apparently don't know how to spell. I went back and found the misspelled words and badabing-badaboom.
+When might trees be preferable to other data structures in real-world systems?
+    To parse through non-linear data, a recursive tree is a must. If I added a find function that highlighted the name entered in the full printed list it would be even more efficient.
+        Like this:
+            1. Add Team Lead (root)
+            2. Add Employee
+            3. Print Team Structure
+            4. Find Name
+            5. Exit
+            Choose an option (1–4): 4
+            Enter name: Ryland Grace
+
+            -Eva Stratt
+                -Ryland Grace (can't bold on txt file, so just imagine it highlighted or bolded)
+                    -Rocky
+                    -Adrian
